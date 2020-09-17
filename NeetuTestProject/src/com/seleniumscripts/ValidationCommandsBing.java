@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ValidationCommands {
+public class ValidationCommandsBing {
 	static boolean status;
 	static int i=0;
 	
