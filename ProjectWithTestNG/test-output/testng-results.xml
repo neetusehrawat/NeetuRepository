@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="2" ignored="4" total="13" passed="6" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<a href='C:\Users\neetu\eclipse-workspace\ProjectWithTestNG\target\surefire-reports\failure_screenhots\VerifyEmptyCartMessage_16_10_20_10_43_48.png'><img src='C:\Users\neetu\eclipse-workspace\ProjectWithTestNG\target\surefire-reports\failure_screenhots\VerifyEmptyCartMessage_16_10_20_10_43_48.png ' height='100' width='100'/> <a/>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2020-10-16T10:43:27 CDT" name="Suite" finished-at="2020-10-16T10:44:12 CDT" duration-ms="44361">
+    <groups>
+      <group name="regression">
+        <method signature="AddItemTocart.addingItemTocartThroughCartButton()[pri:6, instance:com.TestCases.AddItemTocart@33afa13b]" name="addingItemTocartThroughCartButton" class="com.TestCases.AddItemTocart"/>
+        <method signature="AddItemTocart.addingItemTocartThroughQuickView()[pri:5, instance:com.TestCases.AddItemTocart@33afa13b]" name="addingItemTocartThroughQuickView" class="com.TestCases.AddItemTocart"/>
+        <method signature="SignIn.CreateAccountForNewUser()[pri:3, instance:com.TestCases.SignIn@309e345f]" name="CreateAccountForNewUser" class="com.TestCases.SignIn"/>
+        <method signature="SummaryCartPage.VerifyEmptyCartMessage()[pri:4, instance:com.TestCases.SummaryCartPage@7a4ccb53]" name="VerifyEmptyCartMessage" class="com.TestCases.SummaryCartPage"/>
+        <method signature="SummaryCartPage.deleteItemFromCart()[pri:7, instance:com.TestCases.SummaryCartPage@7a4ccb53]" name="deleteItemFromCart" class="com.TestCases.SummaryCartPage"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="AddItemTocart.addingItemTocartThroughCartButton()[pri:6, instance:com.TestCases.AddItemTocart@33afa13b]" name="addingItemTocartThroughCartButton" class="com.TestCases.AddItemTocart"/>
+        <method signature="AddItemTocart.addingItemTocartThroughQuickView()[pri:5, instance:com.TestCases.AddItemTocart@33afa13b]" name="addingItemTocartThroughQuickView" class="com.TestCases.AddItemTocart"/>
+        <method signature="SignIn.verifyAccountAlreadyExist()[pri:2, instance:com.TestCases.SignIn@309e345f]" name="verifyAccountAlreadyExist" class="com.TestCases.SignIn"/>
+        <method signature="SignIn.verifyClickingCreateAccountwithblankEmailid()[pri:1, instance:com.TestCases.SignIn@309e345f]" name="verifyClickingCreateAccountwithblankEmailid" class="com.TestCases.SignIn"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2020-10-16T10:43:27 CDT" name="Test" finished-at="2020-10-16T10:44:12 CDT" duration-ms="44361">
+      <class name="com.TestCases.SignIn">
+        <test-method is-config="true" signature="signupPage()[pri:0, instance:com.TestCases.SignIn@309e345f]" started-at="2020-10-16T10:44:02 CDT" name="signupPage" finished-at="2020-10-16T10:44:03 CDT" duration-ms="1301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupPage -->
+        <test-method signature="verifyClickingCreateAccountwithblankEmailid()[pri:1, instance:com.TestCases.SignIn@309e345f]" started-at="2020-10-16T10:44:03 CDT" name="verifyClickingCreateAccountwithblankEmailid" finished-at="2020-10-16T10:44:04 CDT" duration-ms="1012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingCreateAccountwithblankEmailid -->
+        <test-method signature="verifyAccountAlreadyExist()[pri:2, instance:com.TestCases.SignIn@309e345f]" started-at="2020-10-16T10:44:04 CDT" name="verifyAccountAlreadyExist" finished-at="2020-10-16T10:44:05 CDT" duration-ms="1540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountAlreadyExist -->
+        <test-method signature="CreateAccountForNewUser()[pri:3, instance:com.TestCases.SignIn@309e345f]" started-at="2020-10-16T10:44:05 CDT" name="CreateAccountForNewUser" finished-at="2020-10-16T10:44:12 CDT" duration-ms="6158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateAccountForNewUser -->
+        <test-method is-config="true" signature="closeExcel()[pri:0, instance:com.TestCases.SignIn@309e345f]" started-at="2020-10-16T10:44:12 CDT" name="closeExcel" finished-at="2020-10-16T10:44:12 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeExcel -->
+      </class> <!-- com.TestCases.SignIn -->
+      <class name="com.TestCases.AddItemTocart">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.TestCases.AddItemTocart@33afa13b]" started-at="2020-10-16T10:43:27 CDT" name="launchBrowser" finished-at="2020-10-16T10:43:35 CDT" duration-ms="7535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="homepage()[pri:0, instance:com.TestCases.AddItemTocart@33afa13b]" started-at="2020-10-16T10:43:35 CDT" name="homepage" finished-at="2020-10-16T10:43:36 CDT" duration-ms="1091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+        <test-method signature="addingItemTocartThroughQuickView()[pri:5, instance:com.TestCases.AddItemTocart@33afa13b]" started-at="2020-10-16T10:43:36 CDT" name="addingItemTocartThroughQuickView" finished-at="2020-10-16T10:43:41 CDT" duration-ms="4931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingItemTocartThroughQuickView -->
+        <test-method signature="addingItemTocartThroughCartButton()[pri:6, instance:com.TestCases.AddItemTocart@33afa13b]" started-at="2020-10-16T10:43:41 CDT" name="addingItemTocartThroughCartButton" finished-at="2020-10-16T10:43:44 CDT" duration-ms="3472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingItemTocartThroughCartButton -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.TestCases.AddItemTocart@33afa13b]" started-at="2020-10-16T10:44:12 CDT" name="closeBrowser" finished-at="2020-10-16T10:44:12 CDT" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.TestCases.AddItemTocart -->
+      <class name="com.TestCases.SummaryCartPage">
+        <test-method is-config="true" signature="homepage()[pri:0, instance:com.TestCases.SummaryCartPage@7a4ccb53]" started-at="2020-10-16T10:43:44 CDT" name="homepage" finished-at="2020-10-16T10:43:46 CDT" duration-ms="1116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage -->
+        <test-method retried="true" signature="VerifyEmptyCartMessage()[pri:4, instance:com.TestCases.SummaryCartPage@7a4ccb53]" started-at="2020-10-16T10:43:46 CDT" name="VerifyEmptyCartMessage" finished-at="2020-10-16T10:43:46 CDT" duration-ms="890" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Your shopping cart is empty.] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Your shopping cart is empty.] but found []
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.TestCases.SummaryCartPage.VerifyEmptyCartMessage(SummaryCartPage.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyEmptyCartMessage -->
+        <test-method retried="true" signature="VerifyEmptyCartMessage()[pri:4, instance:com.TestCases.SummaryCartPage@7a4ccb53]" started-at="2020-10-16T10:43:46 CDT" name="VerifyEmptyCartMessage" finished-at="2020-10-16T10:43:47 CDT" duration-ms="1069" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Your shopping cart is empty.] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Your shopping cart is empty.] but found []
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.TestCases.SummaryCartPage.VerifyEmptyCartMessage(SummaryCartPage.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyEmptyCartMessage -->
+        <test-method signature="VerifyEmptyCartMessage()[pri:4, instance:com.TestCases.SummaryCartPage@7a4ccb53]" started-at="2020-10-16T10:43:47 CDT" name="VerifyEmptyCartMessage" finished-at="2020-10-16T10:43:48 CDT" duration-ms="820" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Your shopping cart is empty.] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Your shopping cart is empty.] but found []
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.TestCases.SummaryCartPage.VerifyEmptyCartMessage(SummaryCartPage.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='C:\Users\neetu\eclipse-workspace\ProjectWithTestNG\target\surefire-reports\failure_screenhots\VerifyEmptyCartMessage_16_10_20_10_43_48.png'><img src='C:\Users\neetu\eclipse-workspace\ProjectWithTestNG\target\surefire-reports\failure_screenhots\VerifyEmptyCartMessage_16_10_20_10_43_48.png ' height='100' width='100'/> <a/>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- VerifyEmptyCartMessage -->
+        <test-method signature="deleteItemFromCart()[pri:7, instance:com.TestCases.SummaryCartPage@7a4ccb53]" started-at="2020-10-16T10:43:49 CDT" name="deleteItemFromCart" finished-at="2020-10-16T10:44:02 CDT" duration-ms="12940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteItemFromCart -->
+      </class> <!-- com.TestCases.SummaryCartPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
