@@ -5,7 +5,7 @@
     <listener class-name="com.CustomizedReportTestNG.RetryListenerClass"/>
     <listener class-name="com.CustomizedReportTestNG.TestListener"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Automation Practice(failed)">
     <groups>
       <run>
         <include name="smoke"/>
@@ -15,12 +15,12 @@
     <classes>
       <class name="com.TestCases.SummaryCartPage">
         <methods>
+          <include name="closeApp"/>
           <include name="homepage"/>
-          <include name="closeBrowser"/>
           <include name="launchBrowser"/>
           <include name="VerifyEmptyCartMessage"/>
         </methods>
       </class> <!-- com.TestCases.SummaryCartPage -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Automation Practice(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -15,20 +15,25 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import com.CustomizedReportTestNG.ExtentCustomizedReports;
 import com.Properties.ReuseProperties;
+import com.relevantcodes.extentreports.LogStatus;
 
-public class Reusable {
+public class Reusable extends ExtentCustomizedReports  {
 
 	public static WebDriver driver;
 	public static Actions action;
 	public static WebDriverWait wait;
 	
+	ExtentCustomizedReports ecr=new ExtentCustomizedReports();
 	@BeforeTest(groups={"regression","smoke"})
 	 public static void launchBrowser() throws IOException {
+		test=report.startTest("Automation Practice");
 		 String browser ="";
 		 String url="";
 		 try {
@@ -81,18 +86,22 @@ public class Reusable {
 		public static void click(By locator,String testCaseStep) {
 			try {
 			driver.findElement(locator).click();
+			test.log(LogStatus.PASS, testCaseStep);
 		}catch(Exception e) {
 			Reporter.log(testCaseStep +" failed");
+			test.log(LogStatus.FAIL, testCaseStep);
 		}
 			
 		}
 		
-		public static String getTitle() {
+		public static String getTitle(String testCaseStep ) {
 			String titlename="";
 			try {
 			titlename=driver.getTitle();
+			test.log(LogStatus.PASS, testCaseStep);
 			}catch(Exception e) {
 				Reporter.log("Unable to get Page title");
+				test.log(LogStatus.FAIL, testCaseStep);
 						}
 			return titlename;
 			
@@ -103,8 +112,10 @@ public class Reusable {
 			
 			Select dropdown=new Select(driver.findElement(locator));
 			dropdown.selectByVisibleText(Value);
+			test.log(LogStatus.PASS, testcaseStep);
 			}catch(Exception e) {
 				Reporter.log("dropdown selection failed");
+				test.log(LogStatus.FAIL, testcaseStep);
 				
 			}
 		}
@@ -118,8 +129,12 @@ public class Reusable {
 				if(text.equalsIgnoreCase(Value)) {
 					li.get(i).click();
 					break;
-				}}}catch(Exception e) {
+				}
+			}
+			test.log(LogStatus.PASS, testcaseStep);
+			}catch(Exception e) {
 					Reporter.log("unable to select item from list");
+					test.log(LogStatus.FAIL, testcaseStep);
 					
 				}
 				
@@ -129,8 +144,10 @@ public class Reusable {
 		public static void sendText(By locator ,String inputData,String testcaseStep) {
 			try {
 			driver.findElement(locator).sendKeys(inputData);
+			test.log(LogStatus.PASS, testcaseStep);
 		}catch(Exception e) {
 			Reporter.log("error while enterting data");
+			test.log(LogStatus.FAIL, testcaseStep);
 		}
 			
 		}
@@ -138,8 +155,10 @@ public class Reusable {
 		public static void ClearText(By locator,String testcaseStep) {
 			try {
 			driver.findElement(locator).clear();
+			test.log(LogStatus.PASS, testcaseStep);
 			}catch(Exception e) {
 				Reporter.log("error while clearing textbox");
+				test.log(LogStatus.FAIL, testcaseStep);
 			}
 			
 			
@@ -149,8 +168,10 @@ public class Reusable {
 			String text="";
 			try {
 				text= driver.findElement(locator).getText();
+				test.log(LogStatus.PASS, testcaseStep);
 				}catch(Exception e) {
 				Reporter.log("error while reading text");
+				test.log(LogStatus.FAIL, testcaseStep);
 			}
 			return text;
 			
@@ -160,8 +181,10 @@ public class Reusable {
 			boolean status=false;
 			try {
 			status=driver.findElement(locator).isDisplayed();
+			test.log(LogStatus.PASS, testcaseStep);
 			}catch(Exception e) {
 				Reporter.log("Webelement not displayed");
+				test.log(LogStatus.FAIL, testcaseStep);
 			}
 			return status;
 			
@@ -171,8 +194,10 @@ public class Reusable {
 			try {
 			action= new Actions(driver);
 			action.moveToElement(driver.findElement(locator)).perform();
+			test.log(LogStatus.PASS, testcaseStep);
 		}catch(Exception e) {
 			Reporter.log("Failed to perform mouse hover action");
+			test.log(LogStatus.FAIL, testcaseStep);
 			
 		}
 		}
@@ -180,8 +205,10 @@ public class Reusable {
 		public static void switchToFrameIndex(int index, String testcaseStep) {
 			try {
 			driver.switchTo().frame(index);
+			test.log(LogStatus.PASS, testcaseStep);
 			}catch(Exception e) {
 				Reporter.log("Failed while switching frame");
+				test.log(LogStatus.FAIL, testcaseStep);
 				
 			}
 		}
@@ -190,9 +217,11 @@ public class Reusable {
 			try {
 			wait=new WebDriverWait(driver,20);
 			wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+			test.log(LogStatus.PASS, testcaseStep);
 			
 			}catch(Exception e) {
 				Reporter.log("unable to locate element with explicit wait");
+				test.log(LogStatus.FAIL, testcaseStep);
 				
 			}
 			
@@ -202,9 +231,11 @@ public class Reusable {
 			try {
 			wait=new WebDriverWait(driver,20);
 			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(index));
+			test.log(LogStatus.PASS, testcaseStep);
 			
 			}catch(Exception e) {
 				Reporter.log("unable to switch frame with explicit wait");
+				test.log(LogStatus.FAIL, testcaseStep);
 				
 			}
 			
@@ -216,19 +247,33 @@ public class Reusable {
 			WebElement ele=driver.findElement(locator);
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("arguments[0].scrollIntoView(true);",ele);
+			test.log(LogStatus.PASS, testcaseStep);
 			}
 			catch(Exception e) {
 				Reporter.log("Page Scroll failed.");
+				test.log(LogStatus.FAIL, testcaseStep);
 				
 			}
 			
 			
 		}
 		
-		@AfterTest(groups={"regression","smoke"})
-		public static void closeBrowser() {
+		public void assertEqual(String one,String two, String testCaseStep) {
 			try {
-			driver.close();
+				Assert.assertEquals(one, two);
+				test.log(LogStatus.PASS, testCaseStep);
+			}catch(Exception e) {
+				test.log(LogStatus.FAIL, testCaseStep);
+				
+			}
+			
+		}
+		@AfterTest(groups={"regression","smoke"})
+		public static void closeApp() {
+			try {
+			driver.quit();
+			report.flush();
+			report.endTest(test);
 			}catch(Exception e) {
 				Reporter.log("Script failed while closing browser ");
 				

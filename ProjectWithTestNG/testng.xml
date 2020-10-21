@@ -5,7 +5,7 @@
 <listener class-name="com.CustomizedReportTestNG.RetryListenerClass"/>
 <listener class-name="com.CustomizedReportTestNG.TestListener"/>
 </listeners>
-  <test name="Test">
+  <test name="Automation Practice">
   	<groups>
 		<run>
 		<include name="smoke"/>

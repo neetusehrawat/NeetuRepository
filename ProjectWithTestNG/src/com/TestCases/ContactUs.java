@@ -19,7 +19,7 @@ public class ContactUs extends Reusable  {
 	@Test(priority=4)
 	public void verifytitlePage() {
 		String expectedTitle="Contact us - My Store";
-		String actualTitle=getTitle();
+		String actualTitle=getTitle("Getting Page Title");
 		System.out.println(actualTitle);
 		Assert.assertEquals(actualTitle, expectedTitle);
 			

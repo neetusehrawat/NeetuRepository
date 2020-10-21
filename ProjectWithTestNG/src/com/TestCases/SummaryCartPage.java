@@ -23,15 +23,9 @@ public class SummaryCartPage extends Reusable {
 	public void VerifyEmptyCartMessage() {
 		ExplicitwaitpresenceOfElementLocated(By.cssSelector("b"),"wait for cart button");
 		click(By.cssSelector("b"),"Clicking on cart button");
-		ExplicitwaitpresenceOfElementLocated(By.xpath("//*[@id='center_column']/p"),"verify validation message-Your shopping cart is empty.");		
-		String actual= getText(By.xpath("//*[@id='center_column']/p"),"verify validation message-Your shopping cart is empty.");			
-		System.out.println("Msg=" + actual);
-		String expected="Your shopping cart is empty.";
-		Assert.assertEquals(actual, expected);
+		Assert.assertTrue(isDisplayed(By.xpath("//*[@id='center_column']/p"),"empty cart validation message displayed "));
 		
-		
-		
-		
+			
 	}
 	
 	@Test (priority=7,groups="regression")

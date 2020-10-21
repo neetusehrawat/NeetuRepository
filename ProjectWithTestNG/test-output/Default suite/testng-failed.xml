@@ -3,14 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestCases.SummaryCartPage">
+      <class name="com.TestCases.SignIn">
         <methods>
-          <include name="clickOnCartLink"/>
-          <include name="deleteItemFromCart"/>
-          <include name="closeBrowser"/>
+          <include name="verifyAccountAlreadyExist"/>
+          <include name="closeApp"/>
+          <include name="CreateAccountForNewUser"/>
+          <include name="signupPage"/>
+          <include name="verifyClickingCreateAccountwithblankEmailid"/>
           <include name="launchBrowser"/>
+          <include name="closeExcel"/>
         </methods>
-      </class> <!-- com.TestCases.SummaryCartPage -->
+      </class> <!-- com.TestCases.SignIn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
