@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-19T12:42:03 CDT" name="Default suite" finished-at="2020-10-19T12:42:14 CDT" duration-ms="10476">
+    <groups>
+    </groups>
+    <test started-at="2020-10-19T12:42:03 CDT" name="Default test" finished-at="2020-10-19T12:42:14 CDT" duration-ms="10476">
+      <class name="com.seleniumscripts.DataProviderTestNG">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.seleniumscripts.DataProviderTestNG@d706f19]" started-at="2020-10-19T12:42:03 CDT" name="openApplication" finished-at="2020-10-19T12:42:11 CDT" duration-ms="7918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="calculateInterest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.seleniumscripts.DataProviderTestNG@d706f19]" started-at="2020-10-19T12:42:12 CDT" name="calculateInterest" data-provider="calculate" finished-at="2020-10-19T12:42:13 CDT" duration-ms="513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1010101]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[125656]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[465]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateInterest -->
+        <test-method signature="calculateInterest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.seleniumscripts.DataProviderTestNG@d706f19]" started-at="2020-10-19T12:42:13 CDT" name="calculateInterest" data-provider="calculate" finished-at="2020-10-19T12:42:13 CDT" duration-ms="238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5656565]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[55556]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4545]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateInterest -->
+        <test-method signature="calculateInterest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.seleniumscripts.DataProviderTestNG@d706f19]" started-at="2020-10-19T12:42:13 CDT" name="calculateInterest" data-provider="calculate" finished-at="2020-10-19T12:42:13 CDT" duration-ms="207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[545]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[32000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5656]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateInterest -->
+        <test-method signature="calculateInterest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.seleniumscripts.DataProviderTestNG@d706f19]" started-at="2020-10-19T12:42:13 CDT" name="calculateInterest" data-provider="calculate" finished-at="2020-10-19T12:42:14 CDT" duration-ms="212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[258232]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5656]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateInterest -->
+        <test-method signature="calculateInterest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.seleniumscripts.DataProviderTestNG@d706f19]" started-at="2020-10-19T12:42:14 CDT" name="calculateInterest" data-provider="calculate" finished-at="2020-10-19T12:42:14 CDT" duration-ms="220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5222222]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[25521]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5555]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateInterest -->
+      </class> <!-- com.seleniumscripts.DataProviderTestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

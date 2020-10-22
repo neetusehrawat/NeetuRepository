@@ -4,7 +4,7 @@ public class TestConditional {
 	int a=100 ,b=300 , c= 21;
 	
 	
-	void printLargestNumber() {
+	 void printLargestNumber() {
 		if (a>b && a>c) {
 			System.out.println("a is larger than b & c");  
 																

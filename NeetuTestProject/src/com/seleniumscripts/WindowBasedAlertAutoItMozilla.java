@@ -65,7 +65,7 @@ public class WindowBasedAlertAutoItMozilla {
 		Thread.sleep(3000);
 		Runtime.getRuntime().exec("C:\\Users\\neetu\\UploadToSelenium\\ReplaceExistingFile.exe");
 			
-//https://github.com/ngagearun/sreekanth.git
+
 
 	}
 

@@ -45,7 +45,17 @@ public class WindowBasedAlertSikuli {
 		robot.keyRelease(KeyEvent.VK_P);
 		robot.keyRelease(KeyEvent.VK_CONTROL);
 		
+		
+		//select item drop down using sikuli
 		Thread.sleep(3000);
+		Pattern destination= new Pattern("C:\\Users\\neetu\\Sikuli\\Dropdown.PNG");
+		s.wait(destination,20);
+		s.click(destination);
+		Pattern Printas= new Pattern("C:\\Users\\neetu\\Sikuli\\PrintasPdf.PNG");
+		s.wait(Printas,20);
+		s.click(Printas);
+		
+		
 		Pattern printbutton= new Pattern("C:\\Users\\neetu\\Sikuli\\PrintButton.PNG");
 		s.wait(printbutton,20);
 		s.click(printbutton);
@@ -54,7 +64,7 @@ public class WindowBasedAlertSikuli {
 		Pattern save= new Pattern("C:\\Users\\neetu\\Sikuli\\Save.PNG");
 		Pattern saveButton= new Pattern("C:\\Users\\neetu\\Sikuli\\SaveButton.PNG");
 		s.wait(save,20);
-		s.type(save,"C:\\Users\\neetu\\Desktop\\Sikulidemo.txt");
+		s.type(save,"C:\\Users\\neetu\\Desktop\\Sikulidemo.pdf");
 		
 		s.wait(saveButton,20);
 		s.click(saveButton);

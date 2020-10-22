@@ -1,5 +1,5 @@
 
-public class AreaOfShapes {
+public class AreaOfShapesMethodOverloading {
 	
 	double area;
 	
@@ -25,7 +25,7 @@ public class AreaOfShapes {
 	}
 	
 	 public static void main(String[] arg) {
-		AreaOfShapes Shape= new AreaOfShapes();
+		AreaOfShapesMethodOverloading Shape= new AreaOfShapesMethodOverloading();
 		Shape.areaOfShape(5);
 		Shape.areaOfShape(4,8);
 		Shape.areaOfShape(5.0);
