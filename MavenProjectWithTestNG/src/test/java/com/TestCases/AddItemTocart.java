@@ -14,7 +14,7 @@ public class AddItemTocart extends Reusable {
 		
 	}
 	
-	@Test (priority=5,groups={"regression","smoke"})
+	@Test (priority=6,groups={"regression","smoke"})
 	public void addingItemTocartThroughQuickView() throws InterruptedException {
 		
 		mousehover(By.xpath("//*[@id='block_top_menu']/ul/li[1]/a"),"mouse hover to women section");
@@ -34,7 +34,7 @@ public class AddItemTocart extends Reusable {
 		
 	}
 		
-	@Test (priority=6,groups={"regression","smoke"})
+	@Test (priority=7,groups={"regression","smoke"})
 	public void addingItemTocartThroughCartButton() throws InterruptedException{
 		
 		click(By.xpath("//*[@id='block_top_menu']/ul/li[3]/a"),"Clicking on Tshirt section Dresses");

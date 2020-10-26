@@ -28,7 +28,7 @@ public class SummaryCartPage extends Reusable {
 			
 	}
 	
-	@Test (priority=7,groups="regression")
+	@Test (priority=5,groups="regression")
 	public void deleteItemFromCart() throws InterruptedException {
 		
 		mousehover(By.xpath("//*[@id='block_top_menu']/ul/li[1]/a"),"mouse hover to women section");

@@ -16,12 +16,10 @@
       	
        <class name="com.TestCases.SignIn"/>
        <class name="com.TestCases.SummaryCartPage"/>
-        <class name="com.TestCases.AddItemTocart"/>
-         
-        
-         
-     
-      
-    </classes>
+       <class name="com.TestCases.AddItemTocart"/>
+     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+     
+      
+
