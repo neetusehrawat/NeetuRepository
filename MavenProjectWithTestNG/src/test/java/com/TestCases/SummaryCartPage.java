@@ -32,18 +32,19 @@ public class SummaryCartPage extends Reusable {
 	public void deleteItemFromCart() throws InterruptedException {
 		
 		mousehover(By.xpath("//*[@id='block_top_menu']/ul/li[1]/a"),"mouse hover to women section");
-		mousehover(By.xpath("//*[@id='block_top_menu']/ul/li[1]/ul/li[1]/ul/li[2]/a")," mouse hover blouse section");
-		click(By.xpath("//*[@id='block_top_menu']/ul/li[1]/ul/li[1]/ul/li[2]/a"),"mouse hover blouse section");
-		scrollIntoView(By.xpath("//*[@id='center_column']/ul/li/div/div[1]/div/a[1]/img"),"Scrolling page to blouse image ");
-		mousehover(By.xpath("//*[@id='center_column']/ul/li/div/div[1]/div/a[1]/img"),"mouse hover to blouse image ");
+		mousehover(By.xpath("//*[@id='block_top_menu']/ul/li[1]/ul/li[2]/ul/li[1]/a"),"mouse hover to Casual Dresses");
+		click(By.xpath("//*[@id='block_top_menu']/ul/li[1]/ul/li[2]/ul/li[1]/a"),"Clicking on Casual Dresses");
+		
+		scrollIntoView(By.xpath("//*[@id='center_column']/ul/li/div/div[1]/div/a[1]/img"),"Scrolling page to casual dress image ");
+		mousehover(By.xpath("//*[@id='center_column']/ul/li/div/div[1]/div/a[1]/img"),"mouse hover Quick view image");
 		click(By.xpath("//*[@id='center_column']/ul/li/div/div[1]/div/a[2]/span"),"Clicking Quick view image");
+		
 		switchToFrameIndex(0, "Switching frame");
 		click(By.xpath("//*[@id='add_to_cart']/button/span"),"clicking add to cart button");
 		driver.switchTo().defaultContent();
 		ExplicitwaitpresenceOfElementLocated(By.xpath("//*[@id='layer_cart']/div[1]/div[2]/div[4]/span"),"wait for button- continue Shopping");
 		Thread.sleep(2000);
 		click(By.xpath("//*[@id='layer_cart']/div[1]/div[2]/div[4]/span"),"clicking continue Shopping");
-		
 		
 		click(By.xpath("//*[@id='block_top_menu']/ul/li[3]/a"),"Clicking on Tshirt section Dresses");
 		
